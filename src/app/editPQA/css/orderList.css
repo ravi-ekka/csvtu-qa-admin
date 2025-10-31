@@ -1,0 +1,34 @@
+.tiptap.ProseMirror {
+  line-height: 1.6;
+}
+
+/* base list styles */
+.tiptap.ProseMirror ul,
+.tiptap.ProseMirror ol {
+  margin: 0 0 0.5rem 1.5rem;
+  padding-left: 0;
+  list-style-position: outside;
+}
+
+/* top-level marker types */
+.tiptap.ProseMirror ul { list-style-type: disc; }
+.tiptap.ProseMirror ol { list-style-type: decimal; }
+
+/* spacing for list items */
+.tiptap.ProseMirror li {
+  margin: 0.25rem 0;
+  padding: 0;
+}
+
+/* nested lists */
+.tiptap.ProseMirror ul ul { list-style-type: circle; margin-left: 1.25rem; }
+.tiptap.ProseMirror ul ul ul { list-style-type: square; margin-left: 1rem; }
+
+.tiptap.ProseMirror ol ol { list-style-type: lower-alpha; margin-left: 1.25rem; }
+.tiptap.ProseMirror ol ol ol { list-style-type: lower-roman; margin-left: 1rem; }
+
+/* ::marker */
+.tiptap.ProseMirror li::marker {
+  font-weight: 600;
+  opacity: 0.9;
+}
