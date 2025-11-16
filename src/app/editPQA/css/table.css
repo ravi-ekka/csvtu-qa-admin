@@ -1,0 +1,32 @@
+/* basic table styling inside ProseMirror */
+.ProseMirror table,
+.tiptap .ProseMirror table,
+.tt-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.5rem 0;
+}
+
+.ProseMirror th,
+.ProseMirror td,
+.tt-table th,
+.tt-table td {
+  border: 1px solid #d1d5db; /* gray-300 */
+  padding: 0.5rem;
+  vertical-align: top;
+}
+
+.ProseMirror th {
+  background: #f9fafb; /* light */
+  font-weight: 600;
+}
+
+/* responsive overflow for wide tables */
+.ProseMirror .table-wrapper {
+  overflow-x: auto;
+}
+
+/* optional: nicer focus on selected cell */
+.ProseMirror td.is-selected {
+  outline: 2px solid #60a5fa; /* blue-400 */
+}

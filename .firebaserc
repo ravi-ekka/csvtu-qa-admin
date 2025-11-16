@@ -1,0 +1,12 @@
+{
+  "projects": {
+    "default": "csvtu-questions-answer"
+  },
+  "targets": {
+    "csvtu-questions-answer": {
+      "hosting": {
+        "csvtu-qa-admin": ["csvtu-qa-admin"]
+      }
+    }
+  }
+}
